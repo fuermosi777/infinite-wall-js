@@ -4,7 +4,7 @@ Infinite Wall is a jQuery plugin that helps you create an infinite photo gallary
 
 #Preview
 
-![](http://liuhao.im/projects/image/10.gif =500x)
+![](http://liuhao.im/projects/image/10.gif)
 
 #How to use
 
