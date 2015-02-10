@@ -1,0 +1,64 @@
+/*
+ * CSS Infinite Wall
+ * Copyright (c) 2015 Hao Liu (http://liuhao.im)
+ * Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license.
+ *
+ */
+
+html, body {
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+}
+body {
+    background-color: black
+}
+/* viewport 
+----------------------------------------------------------------
+*/
+
+#viewport {
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+    color: #fff;
+    background-color: #000;
+    position: relative;
+}
+
+/* viewport wall
+----------------------------------------------------------------
+*/
+
+#viewport #wall {
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    position: relative;
+}
+#viewport #wall .tile {
+    position: absolute;
+    background-size: cover;
+}
+#viewport #wall .tile:hover:before {
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+#viewport #wall .tile:before {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    transition: all 0.3s ease;
+}
+#viewport #wall .tile.active:before {
+    background-color: rgba(0, 0, 0, 0) !important;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+}

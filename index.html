@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Infinite Wall</title>
+
+    <!-- jQuery -->
+    <script src="dist/jquery-1.11.2.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <!-- font -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,800' rel='stylesheet' type='text/css'>
+    <link href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' rel='stylesheet' type='text/css'>
+
+    <!-- cus -->
+    <link rel="stylesheet" href="css/infinite-wall.css">
+    
+    <script src="js/infinite-wall.js"></script>
+
+    <!-- get data -->
+    <script src="data.js"></script>
+</head>
+
+<body>
+    <div id="viewport">
+    </div>
+
+    <script>
+    $('#viewport').wall({
+        data: data,
+        width: 100,
+        height: 100
+    });
+    </script>
+</body>
+
+</html>
